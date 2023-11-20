@@ -233,11 +233,11 @@ form .form-row .textarea{
 
 .input-data label{
     bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     pointer-events: none;
     transition: all 0.3 ease;
     margin-left: 10px;
-    color: white;
+    color: black;
 }
 
 .input-data input:valid ~ label,
@@ -245,7 +245,7 @@ form .form-row .textarea{
 .input-data input:focus ~ label,
 .textarea textarea:focus ~ label{
     transform: translateY(-30px);
-    color: white;
+    color: black;
     font-weight: 300;
     font-size: 14px;
 }
@@ -321,8 +321,8 @@ form .form-row .textarea{
 
 .submit-btn .input-data input:hover{
     z-index: 2;
-    border: 1px solid pink;
-    color: pink;
+    border: 1px solid blue;
+    color: blue;
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
@@ -340,24 +340,6 @@ form .form-row .textarea{
     backdrop-filter: blur(2px);
     transition: all 0.3s;
 }
-
-@media (max-width: 700px){
-    .form-container .text{
-        font-size: 30px;
-    }
-    .form-container form{
-        padding: 10px 0 0 0 0;
-    }
-    .form-container form .form-row{
-        display: block;
-    }
-    form .form-row .input-data{
-        margin: 35px 0!important;
-    }
-    .submit-btn .input-data{
-        width: 40%!important;
-    }
-} 
 
 .row{
     display:block;
@@ -393,3 +375,4 @@ input::placeholder, textarea::placeholder{
 input:focus::placeholder, textarea:focus::placeholder{
     opacity: 0%;
 }
+

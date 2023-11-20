@@ -257,3 +257,73 @@ section {
     background: linear-gradient(45deg, rgba(88, 88, 88, 0.4) 55%, rgba(132, 132, 132, 0.2) 10%);
     color: whitesmoke;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .navbar {
+        text-align: right;
+        padding: 15px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+
+    .navbar a, .droptext {
+        font-size: 16px;
+    }
+
+    .effect {
+        font-size: 30px;
+    }
+
+    .banner em {
+        font-size: 20px;
+    }
+
+    .art {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-box {
+        width: 85%;
+        margin: auto;
+    }
+
+    .foot {
+        padding: 10px 15px;
+        font-size: 14px;
+        background-color: #333333;
+    }
+
+    .bg-video {
+        display: none;
+    }
+
+    body {
+        background-image: url("images/travel.jpg");
+        background-position: center;
+        margin: 0; 
+        padding: 0; 
+        height: 100%;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+
+    .btnview {
+        margin: auto;
+        width: 92%;
+    }
+}
+
