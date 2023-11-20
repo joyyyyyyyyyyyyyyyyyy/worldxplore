@@ -1,0 +1,259 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* VIDEO */
+.bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-video video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; 
+    opacity: 0.65;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    text-align: right;
+    padding: 30px 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: rgb(47, 50, 255);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* DROPDOWN */
+.droptext {
+    color: white;
+    font-size: 16px;
+    padding: 0px 0px 10px 0px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.droptext:hover {
+    color: rgb(47, 50, 255);
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: white;
+    text-align: center;
+    padding: 13px 20px;
+    margin: 5px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.currentpage {
+    text-decoration: underline !important;
+    color: rgb(47, 50, 255) !important;
+    opacity: 80%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* BANNER */
+.banner {
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0))
+}
+
+.effect {
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-family: fantasy;
+    z-index: -1;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+.foot{
+    margin-top: auto;
+    background-color: transparent;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 10px 30px;
+    position: relative;
+    bottom: 0px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+.foot a:hover {
+    color: rgb(198, 255, 255);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*  */
+main {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+section {
+    margin:0 auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* CARD DISPLAY */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px; 
+    position: relative;
+}
+
+.art {
+    display: inline-block;
+    width: 20%;
+    margin: 0px 30px;
+    transition: 0.3s;
+}
+
+.article-box {
+    padding: 15px 15px 0px 15px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.6);
+    ;
+}
+
+.article-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(129, 251, 255, 0.8))
+}
+
+.article-content {
+    color: whitesmoke;
+    padding: 10px;
+    height: 100px;
+}
+
+.articleimg {
+    width: 100%;
+}
+
+.articleimg:hover {
+    filter: grayscale(50%);
+}
+
+.imgtitle {
+    position: relative;
+    margin-top: -40px;
+    color: white;
+    width: 100%;
+    padding: 7.5px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(129, 251, 255, 0.8))
+}
+
+.btnview {
+    margin-top: 30px;
+    opacity: 80%;
+    border: 0;
+    line-height: 2.5;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+    transition: 0.2s;
+}
+
+.btnview:hover {
+    background-color: rgba(210, 192, 203, 0.5);
+    color: white;
+    opacity: 80%;
+}
+
+.btnview:active {
+    box-shadow: inset 2px 2px 3px rgba(186, 190, 204), inset -2px -2px 3px white;
+}
+
+.dark-theme {
+    background: linear-gradient(45deg, rgba(88, 88, 88, 0.4) 55%, rgba(132, 132, 132, 0.2) 10%);
+    color: whitesmoke;
+}
