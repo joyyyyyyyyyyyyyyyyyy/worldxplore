@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbarLinks = document.getElementById('navbarLinks');
 
     menuIcon.addEventListener('click', function () {
-        console.log('Menu icon clicked'); // Add this line
+        console.log('Menu icon clicked');
         navbarLinks.classList.toggle('show');
     });
 });

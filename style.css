@@ -7,6 +7,10 @@ body, html {
     flex-direction: column;
 }
 
+.container {
+    position: relative;
+}
+
 header {
     position: absolute;
     top: 0px;
@@ -14,8 +18,8 @@ header {
 
 
 svg {
-    width: 5%;
-    height: 5%;
+    width: 60px; 
+    height: 60px;
 }
 
 
@@ -268,12 +272,41 @@ section {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    svg {
+        width: 80px; /* Adjusted the size of the SVG logo for smaller screens */
+        height: 80px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .navbar .dropdown {
+        margin-bottom: 20px;
+    }
+
     .menu-icon {
         display: flex;
     }
 
+    .menu-icon div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
     .navbar {
-        display: none;
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -283,22 +316,20 @@ section {
         z-index: 2;
     }
 
-    .logo {
-        order: -1; /* Move the logo to the left */
-    }
-
     .navbar.show {
         display: flex;
     }
 
-    .menu-icon {
-        display: block;
+    .navbar a {
+        display: none;
     }
 
-    .navbar a {
-        text-align: center;
-        padding: 15px 0;
-        width: 100%;
+    .navbar:not(.show) {
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
     }
 
     .navbar.active a {
@@ -357,12 +388,6 @@ section {
         background-attachment: fixed;
     }
 
-    .btnview {
-        margin: auto;
-        width: 92%;
-        margin-bottom: 20px;
-    }
-
     .navbar.active .menu-icon div:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -396,4 +421,3 @@ section {
     margin: 5px 0;
     transition: 0.4s;
 }
-

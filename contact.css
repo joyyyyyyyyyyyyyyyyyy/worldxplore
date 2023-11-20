@@ -7,9 +7,22 @@ body, html {
     flex-direction: column;
 }
 
+.container {
+    position: relative;
+}
+
+
 header {
     position: absolute;
-    top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+svg {
+    width: 60px; 
+    height: 60px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -376,3 +389,90 @@ input:focus::placeholder, textarea:focus::placeholder{
     opacity: 0%;
 }
 
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    svg {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .navbar .menu-icon {
+        display: flex;
+    }
+
+    .foot {
+        padding: 10px 15px;
+        font-size: 14px;
+        background-color: #333333;
+    }
+
+    .bg-video {
+        display: none;
+    }
+
+    body {
+        background-image: url("images/travel.jpg");
+        background-position: center;
+        margin: 0; 
+        padding: 0; 
+        height: 100%;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+
+    .navbar.active .menu-icon div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .navbar.active .menu-icon div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.active .menu-icon div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar:not(.show) {
+        display: none;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
@@ -14,8 +15,9 @@
     </div>
 
     <header>
-        <div class="logo">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <div class="container">
+            <div class="logo">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
                 style="enable-background:new 0 0 100 100;" xml:space="preserve">
                 <g>
@@ -43,25 +45,24 @@
                     </g>
                 </g>
             </svg>
-
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <div class="droptext">
-                    <a href="#">Package Tours</a>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Finland</a>
-                    <a href="#">Switzerland</a>
-                    <a href="#">Canada</a>
-                </div>
             </div>
-            <a href="#">Rediscover Singapore</a>
-            <a href="cruise.html">Cruises</a>
-            <a class="currentpage" href="contact.html">Contact Us</a>
-        </nav>
-        </nav>
+            <nav class="navbar" id="navbarLinks">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <div class="droptext">
+                        <a href="#">Package Tours</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Finland</a>
+                        <a href="#">Switzerland</a>
+                        <a href="#">Canada</a>
+                    </div>
+                </div>
+                <a href="#">Rediscover Singapore</a>
+                <a href="cruise.html">Cruises</a>
+                <a class="currentpage" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </header>
 
     <div class="form-container">
@@ -104,9 +105,9 @@
             </div>
         </form>
     </div>
-    
+
     <br><br><br><br>
-    
+
     <footer class="foot dark-theme">
         <div class="footer-left">
             <p class="footer-links">
@@ -123,6 +124,7 @@
         </div>
     </footer>
 
+    <script src="your-script.js"></script>
 </body>
 
 </html>
