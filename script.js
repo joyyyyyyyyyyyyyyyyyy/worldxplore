@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navbar = document.querySelector('.navbar');
+    const menuIcon = document.getElementById('menuIcon');
+    const navbarLinks = document.getElementById('navbarLinks');
 
-    hamburger.addEventListener('click', function () {
-        navbar.classList.toggle('show');
+    menuIcon.addEventListener('click', function () {
+        console.log('Menu icon clicked'); // Add this line
+        navbarLinks.classList.toggle('show');
     });
 });
