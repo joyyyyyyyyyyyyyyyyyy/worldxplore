@@ -399,6 +399,11 @@ section {
     .navbar.active .menu-icon div:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    .btnview {
+        margin-bottom: 25px;
+        width: 92%;
+    }
     
 }
 
